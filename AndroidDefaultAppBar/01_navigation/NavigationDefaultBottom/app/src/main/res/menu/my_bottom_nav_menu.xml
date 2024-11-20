@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="旋转" android:id="@+id/nav_menu_rotate" android:icon="@drawable/ic_num1"/>
+    <item android:title="缩放" android:id="@+id/nav_menu_zoom" android:icon="@drawable/ic_num2"/>
+    <item android:title="移动" android:id="@+id/nav_menu_move" android:icon="@drawable/ic_num3"/>
+</menu>
