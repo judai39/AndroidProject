@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CompetitionScore</string>
+    <string name="btn_add_one">+1</string>
+    <string name="btn_add_two">+2</string>
+    <string name="btn_add_three">+3</string>
+    <string name="red_kata">红方</string>
+    <string name="blue_kata">蓝方</string>
+    <string name="red_score">红方分数</string>
+    <string name="blue_score">蓝方分数</string>
+</resources>

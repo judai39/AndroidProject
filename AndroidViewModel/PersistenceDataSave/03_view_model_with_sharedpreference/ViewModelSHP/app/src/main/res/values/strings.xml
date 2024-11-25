@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewModelSHP</string>
+    <string name="score_key">score_key</string>
+    <string name="shred_preference_local_key">local_key</string>
+</resources>
