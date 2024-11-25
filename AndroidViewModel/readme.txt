@@ -1,0 +1,1 @@
+ViewModel便于android项目使用活数据LiveData
