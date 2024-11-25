@@ -35,5 +35,4 @@ public class WordViewModel extends AndroidViewModel {
     public LiveData<List<Word>> getAllWordsLive() {
         return repository.getAllWordsLive();
     }
-
 }
