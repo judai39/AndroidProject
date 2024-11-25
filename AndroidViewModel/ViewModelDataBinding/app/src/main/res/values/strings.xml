@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ViewModelDataBinding</string>
+    <string name="btn_string">+1</string>
+</resources>
