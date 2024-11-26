@@ -1,0 +1,3 @@
+include ':extendsapplication'
+include ':app'
+rootProject.name = "Parcelable"
