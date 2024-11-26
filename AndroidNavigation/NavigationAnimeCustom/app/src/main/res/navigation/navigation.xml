@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/fragment_first_id"
+            android:id="@+id/navigation">
+
+    <fragment tools:layout="@layout/fragment_first"
+              android:name="com.haoyudu.navigationanimecustom.FirstFragment"
+              android:id="@+id/fragment_first_id"
+              android:label="first_label">
+        <action android:id="@+id/action_first_to_second"
+                app:destination="@id/fragment_second_id" app:enterAnim="@anim/fragment_fade_enter"
+                app:exitAnim="@anim/fragment_fade_exit"/>
+    </fragment>
+
+    <fragment tools:layout="@layout/fragment_second"
+              android:name="com.haoyudu.navigationanimecustom.SecondFragment"
+              android:id="@+id/fragment_second_id"
+              android:label="second_label">
+        <action android:id="@+id/action_second_to_first"
+                app:destination="@id/fragment_first_id" app:enterAnim="@anim/fragment_open_enter"
+                app:exitAnim="@anim/fragment_open_exit"/>
+    </fragment>
+
+</navigation>
