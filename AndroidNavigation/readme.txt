@@ -1,0 +1,1 @@
+Android鼓励开发者对页面的跳转的处理使用navigation与fragment
