@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                      android:layout_height="match_parent"
+                                                      app:layoutDescription="@xml/activity_main_scene">
+
+    <fragment
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="411dp"
+            android:layout_height="655dp" app:navGraph="@navigation/navigation" app:defaultNavHost="true"
+            android:id="@+id/fragment" android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/includes_id" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="413dp"
+            android:layout_height="75dp"
+            android:background="@color/gray"
+            android:id="@+id/includes_id"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/guideline4"
+                                                    app:layout_constraintGuide_percent="0.5"
+                                                    android:orientation="vertical"/>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 layout="@layout/icon_message_layout"
+                 app:layout_constraintEnd_toStartOf="@+id/guideline4" app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 layout="@layout/icon_finding_layout"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintStart_toStartOf="@+id/guideline4"
+                 app:layout_constraintEnd_toStartOf="@+id/guideline4"/>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 layout="@layout/icon_mine_layout"
+                 app:layout_constraintStart_toStartOf="@+id/guideline4"
+                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

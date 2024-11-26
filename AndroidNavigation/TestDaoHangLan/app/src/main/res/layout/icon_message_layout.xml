@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                      xmlns:tools="http://schemas.android.com/tools"
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="match_parent"
+                                                      android:background="?attr/selectableItemBackgroundBorderless"
+                                                      app:layoutDescription="@xml/icon_layout_scene"
+                                                      android:id="@+id/messageMotionLayout">
+
+    <TextView
+            android:text="@string/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2" tools:layout_editor_absoluteY="429dp"
+            tools:layout_editor_absoluteX="163dp"/>
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_book_stroke" android:id="@+id/imageView"
+            tools:layout_editor_absoluteY="112dp" tools:layout_editor_absoluteX="186dp"
+            app:altSrc="@drawable/ic_book_fill"/>
+</androidx.constraintlayout.motion.widget.MotionLayout>
