@@ -5,6 +5,8 @@ class FunctionParameter {
 //    fun method(num:Int,num_default:Int=10):Int{
 //        return num+num_default
 //    }
+    /**无返回值函数*/
+    fun voidMethod():Unit{}//:Unit可省略
     /**单表达式函数(等价于上面的)*/
     fun method(num:Int,num_default: Int=10)=num+num_default
 
