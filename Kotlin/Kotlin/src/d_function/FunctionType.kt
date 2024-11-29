@@ -8,6 +8,7 @@ class FunctionType {
 
     /**思考:这里的实际返回类型是什么?
      *  function type
+     *  将方法作为参数或者返回值的函数称之为高阶函数
      * */
     fun toSeconds(time: String): (Int) -> Int = when (time) {
         "hour" -> { value -> value * 60 * 60 }

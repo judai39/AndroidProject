@@ -19,6 +19,4 @@ fun main() {
         }
     }
     cat.say()
-
-
 }
