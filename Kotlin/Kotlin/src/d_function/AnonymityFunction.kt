@@ -29,7 +29,7 @@ fun main() {
     //1.单独调用(Lambda 表达式可以通过在大括号后添加括号并在括号内包含任何参数来自行调用)
     println({text:String -> text.uppercase()}("hello"))
 
-    //2.尾随Lambda(如果一个方法中的参数仅有一个function type的话,可以将该lambda参数移到该方法后面进行尾随out of parentheses)
+    //2.尾随Lambda(如果一个方法中的参数最后一个是function type的话,可以将该lambda参数移到该方法后面进行尾随out of parentheses)
     //fold(初始值,一个操作)
     println(listOf(1, 2, 3).fold(0, { x, item -> x + item }))
 
