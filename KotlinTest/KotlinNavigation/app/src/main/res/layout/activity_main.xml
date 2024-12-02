@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+        <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/guideline"
+                                                    android:orientation="horizontal"
+                                                    app:layout_constraintGuide_percent="0.85"/>
+        <fragment
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" app:navGraph="@navigation/navigation" app:defaultNavHost="true"
+                android:id="@+id/fragment"
+                app:layout_constraintBottom_toTopOf="@+id/guideline" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/guideline">
+
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     layout="@layout/icon_fragment_first"
+                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                     app:layout_constraintHorizontal_bias="0.163" app:layout_constraintVertical_bias="0.567"/>
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     layout="@layout/icon_fragment_second"
+                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                     />
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     layout="@layout/icon_fragment_third"
+                     app:layout_constraintStart_toEndOf="@+id/second_fragment" app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
