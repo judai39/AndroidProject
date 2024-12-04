@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         viewModel.getAllWordsLive().observe(this, new Observer<List<Word>>() {
             @Override
             public void onChanged(List<Word> words) {
+                /***/
                 myAdapter.setWordsAll(words);
                 myAdapter.notifyDataSetChanged();/**提醒database,数据已刷新*/
             }

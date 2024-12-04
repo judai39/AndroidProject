@@ -15,6 +15,12 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
+    /**没有构造器,也没有对wordsAll添加数据,仅设置了setter,getter,说明要在main中手动添加
+     * -->自然想到了observer中添加  思考:为什么observer可以实现自动化观察?
+     * -->  observer观察到(这里的观察是?)Model.LiveData变化->调用setWordsAll(),添加了数据到adapter中实现了view的同步
+     *                    这里的观察是通过比较adapter中的getCountItem():returnNum,由于之前的观察导致adapter中的数据发生变化,所以这里的returnNum肯定也会变化,所以就能"察觉到"
+     * */
+
     private List<Word> wordsAll=new ArrayList<>();
     private boolean isCard;
 

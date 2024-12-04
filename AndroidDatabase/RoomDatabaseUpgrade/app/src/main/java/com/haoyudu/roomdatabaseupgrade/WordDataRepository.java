@@ -53,19 +53,6 @@ public class WordDataRepository {
             wordDao.insertWords(words);
             return null;
         }
-
-        //进度更新时调用
-//        @Override
-//        protected void onProgressUpdate(Void... values) {
-//            super.onProgressUpdate(values);
-//        }
-
-
-        //在后台任务执行之前调用
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//        }
     }
 
     static class DeleteAsyncTask extends AsyncTask<Word, Void, Void> {
