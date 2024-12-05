@@ -1,6 +1,6 @@
 package f_operator.transmit
 
-
+/**返回值为代码块最后一句*/
 class Student{
     fun say()=print("hello")
     fun eat()= print("have a lunch")
@@ -21,5 +21,13 @@ fun main() {
         it.eat()
         it.sleep()
     }//如果student对象不为空,则调用
+
     /**返回值为最后的表达式return*/
+    val num=student.let {
+        it.say()
+        it.eat()
+        it.sleep()
+        999
+    }
+    println(num)
 }
