@@ -14,9 +14,11 @@ class StudentRun{
 
 fun main() {
     var student=StudentRun()
-    student?.run {
+    /**返回值是最后一行(return)*/
+    var num=student?.run {
         say()
         eat()
         sleep()
+        999
     }
 }
