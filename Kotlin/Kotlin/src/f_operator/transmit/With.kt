@@ -1,6 +1,6 @@
 package f_operator.transmit
 
-/**在调用一个实例对象的成员时,可以使用also包围,在代码块中直接使用(无需调用)*/
+/**在调用一个实例对象的成员时,可以使用with包围,在代码块中直接使用(无需调用)*/
 class StudentWith{
     fun say()=print("hello")
     fun eat()= print("have a lunch")
