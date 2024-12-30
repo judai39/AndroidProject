@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/mainFragment"
+            android:id="@+id/navigation">
+
+    <fragment android:name="com.haoyudu.roomcrud.insert_fragment.InsertFragment"
+              android:id="@+id/insertFragment"
+              tools:layout="@layout/fragment_insert"/>
+
+    <fragment android:name="com.haoyudu.roomcrud.main_fragment.MainFragment"
+              android:id="@+id/mainFragment"
+              tools:layout="@layout/fragment_main"/>
+
+    <fragment android:name="com.haoyudu.contentresolvertest.delete_fragment.DeleteFragment"
+              android:id="@+id/deleteFragment"
+              tools:layout="@layout/fragment_delete"/>
+</navigation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stu_array">
+        <item>计Bg211</item>
+        <item>计Bg212</item>
+        <item>计Bg213</item>
+    </string-array>
+</resources>
