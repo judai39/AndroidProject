@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/mainFragment"
+            android:id="@+id/navigation">
+
+    <fragment android:name="com.haoyudu.roomcrud.insert_fragment.InsertFragment"
+              android:id="@+id/insertFragment"
+              tools:layout="@layout/fragment_insert"/>
+
+    <fragment android:name="com.haoyudu.roomcrud.main_fragment.MainFragment"
+              android:id="@+id/mainFragment"
+              tools:layout="@layout/fragment_main"/>
+
+
+    <fragment android:name="com.haoyudu.roomcrud.delete_fragment.DeleteFragment"
+              android:id="@+id/deleteFragment"
+              tools:layout="@layout/fragment_delete"/>
+
+    <fragment android:name="com.haoyudu.roomcrud.upgrade_fragment.UpgradeFragment"
+              android:id="@+id/upgradeFragment"
+              tools:layout="@layout/fragment_upgrade"/>
+
+    <fragment android:name="com.haoyudu.roomcrud.upgrade_fragment.NameMessageFragment"
+              android:id="@+id/nameFillFragment"
+              tools:layout="@layout/fragment_name_message"/>
+
+    <fragment android:name="com.haoyudu.roomcrud.upgrade_fragment.AgeMessageFragment"
+              android:id="@+id/ageFillFragment"
+              tools:layout="@layout/fragment_age_message"/>
+</navigation>
