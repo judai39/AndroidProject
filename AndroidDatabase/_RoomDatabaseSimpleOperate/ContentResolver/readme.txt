@@ -1,0 +1,1 @@
+如果想要其他app访问本项目的数据库,需要使用ContentProvider共享uri来获取数据库文件
